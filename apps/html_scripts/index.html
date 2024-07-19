@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KXN Technologies Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #orderDetails {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        #orderDetails p {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            flex: 1;
+        }
+
+        .form-group input {
+            flex: 2;
+        }
+
+        .form-group button {
+            flex: 1;
+        }
+    </style>
+    <script>
+        async function createOrder() {
+            const category = document.getElementById('category').value;
+            const response = await fetch('http://127.0.0.1:5000/order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ category: category }),
+            });
+            const data = await response.json();
+            alert(`Order created with ID: ${data.order_id}`);
+        }
+
+        async function getOrder() {
+            const orderId = document.getElementById('order_id').value;
+            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`);
+            const data = await response.json();
+            const orderDetails = document.getElementById('orderDetails');
+            if (data.error) {
+                orderDetails.innerHTML = `<p>${data.error}</p>`;
+            } else {
+                orderDetails.innerHTML = `
+                    <p><strong>Order ID:</strong> ${orderId}</p>
+                    <p><strong>Category:</strong> ${data.category}</p>
+                    <p><strong>Status:</strong> ${data.status}</p>
+                `;
+            }
+        }
+
+        async function updateOrder() {
+            const orderId = document.getElementById('order_id').value;
+            const status = document.getElementById('status').value;
+            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ status: status }),
+            });
+            const data = await response.json();
+            alert(`Order updated: ${data.status}`);
+        }
+
+        async function deleteOrder() {
+            const orderId = document.getElementById('order_id').value;
+            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+                method: 'DELETE',
+            });
+            const data = await response.json();
+            alert(data.status);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="img.png" alt="KXN Logo" class="logo">
+        <h1>KXN Technologies Restaurant</h1>
+
+        <h2>Create Order</h2>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" placeholder="e.g., Chinese Fast Foods">
+            <button onclick="createOrder()">Create</button>
+        </div>
+
+        <h2>Get Order</h2>
+        <div class="form-group">
+            <label for="order_id">Order ID:</label>
+            <input type="number" id="order_id">
+            <button onclick="getOrder()">Get</button>
+        </div>
+
+        <div id="orderDetails"></div>
+
+        <h2>Update Order</h2>
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <input type="text" id="status" placeholder="e.g., Completed">
+            <button onclick="updateOrder()">Update</button>
+        </div>
+
+        <h2>Delete Order</h2>
+        <div class="form-group">
+            <label for="order_id_delete">Order ID:</label>
+            <input type="number" id="order_id_delete">
+            <button onclick="deleteOrder()">Delete</button>
+        </div>
+    </div>
+</body>
+</html>
