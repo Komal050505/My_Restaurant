@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KXN Technologies Restaurant</title>
+    <title>KOMAL'S Restaurant</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,93 +18,95 @@
 
         .container {
             background: white;
-            padding: 20px;
+            padding: 5.4px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            width: 95%;
+            max-width: 320px;
             text-align: center;
         }
 
         h1, h2 {
             color: #333;
+            font-size: 0.864rem;
+            margin: 5.4px 0;
         }
 
         input[type="text"], input[type="number"] {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin: 10px 0;
+            width: calc(100% - 9px);
+            padding: 2.7px;
+            margin: 2.7px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 10.8px;
         }
 
         button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
-            margin: 10px 0;
+            padding: 2.7px 5.4px;
+            margin: 2.7px 0;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 8.64px;
         }
 
         button:hover {
             background-color: #45a049;
         }
 
-        #orderDetails {
-            margin-top: 20px;
+        #orderDetails, #billDetails {
+            margin-top: 5.4px;
             text-align: left;
         }
 
-        #orderDetails p {
+        #orderDetails p, #billDetails p {
             background: #f4f4f4;
-            padding: 10px;
+            padding: 5.4px;
             border-radius: 4px;
+            font-size: 8.64px;
         }
 
         .logo {
-            width: 150px;
-            margin-bottom: 20px;
+            width: 54px;
+            margin-bottom: 5.4px;
         }
 
         .form-group {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 5.4px;
         }
 
         .form-group label {
-            margin-right: 10px;
-            flex: 1;
+            display: block;
+            margin-bottom: 1.08px;
+            font-size: 10.8px;
         }
 
         .form-group input {
-            flex: 2;
-        }
-
-        .form-group button {
-            flex: 1;
+            width: calc(100% - 9px);
+            font-size: 10.8px;
         }
     </style>
     <script>
         async function createOrder() {
+            const tableId = document.getElementById('create_table_id').value;
             const category = document.getElementById('category').value;
-            const response = await fetch('http://127.0.0.1:5000/order', {
+            const response = await fetch(`http://127.0.0.1:5000/table/${tableId}/order`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ category: category }),
+                body: JSON.stringify({ items: [{ category: category, name: "item", quantity: 1 }] }), // Adjust based on your order structure
             });
             const data = await response.json();
             alert(`Order created with ID: ${data.order_id}`);
         }
 
         async function getOrder() {
+            const tableId = document.getElementById('get_table_id').value;
             const orderId = document.getElementById('order_id').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`);
+            const response = await fetch(`http://127.0.0.1:5000/table/${tableId}/order/${orderId}`);
             const data = await response.json();
             const orderDetails = document.getElementById('orderDetails');
             if (data.error) {
@@ -112,42 +114,62 @@
             } else {
                 orderDetails.innerHTML = `
                     <p><strong>Order ID:</strong> ${orderId}</p>
-                    <p><strong>Category:</strong> ${data.category}</p>
-                    <p><strong>Status:</strong> ${data.status}</p>
+                    <p><strong>Order Details:</strong> ${JSON.stringify(data)}</p>
                 `;
             }
         }
 
         async function updateOrder() {
-            const orderId = document.getElementById('order_id').value;
+            const tableId = document.getElementById('update_table_id').value;
+            const orderId = document.getElementById('update_order_id').value;
             const status = document.getElementById('status').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+            const response = await fetch(`http://127.0.0.1:5000/table/${tableId}/order/${orderId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ status: status }),
+                body: JSON.stringify({ status: status }), // Adjust based on your order structure
             });
             const data = await response.json();
             alert(`Order updated: ${data.status}`);
         }
 
         async function deleteOrder() {
-            const orderId = document.getElementById('order_id').value;
-            const response = await fetch(`http://127.0.0.1:5000/order/${orderId}`, {
+            const tableId = document.getElementById('delete_table_id').value;
+            const orderId = document.getElementById('delete_order_id').value;
+            const response = await fetch(`http://127.0.0.1:5000/table/${tableId}/order/${orderId}`, {
                 method: 'DELETE',
             });
             const data = await response.json();
             alert(data.status);
         }
+
+        async function getBill() {
+            const tableId = document.getElementById('billing_table_id').value;
+            const response = await fetch(`http://127.0.0.1:5000/table/${tableId}/billing`);
+            const data = await response.json();
+            const billDetails = document.getElementById('billDetails');
+            if (data.error) {
+                billDetails.innerHTML = `<p>${data.error}</p>`;
+            } else {
+                billDetails.innerHTML = `
+                    <p><strong>Table ID:</strong> ${tableId}</p>
+                    <p><strong>Total Bill:</strong> $${data.total_bill}</p>
+                `;
+            }
+        }
     </script>
 </head>
 <body>
     <div class="container">
-        <img src="img.png" alt="KXN Logo" class="logo">
-        <h1>KXN Technologies Restaurant</h1>
+        <img src="komals_logo.png" alt="KOMAL'S Restaurant Logo" class="logo">
+        <h1>KOMAL'S Restaurant</h1>
 
         <h2>Create Order</h2>
+        <div class="form-group">
+            <label for="create_table_id">Table ID:</label>
+            <input type="number" id="create_table_id">
+        </div>
         <div class="form-group">
             <label for="category">Category:</label>
             <input type="text" id="category" placeholder="e.g., Chinese Fast Foods">
@@ -155,6 +177,10 @@
         </div>
 
         <h2>Get Order</h2>
+        <div class="form-group">
+            <label for="get_table_id">Table ID:</label>
+            <input type="number" id="get_table_id">
+        </div>
         <div class="form-group">
             <label for="order_id">Order ID:</label>
             <input type="number" id="order_id">
@@ -165,6 +191,14 @@
 
         <h2>Update Order</h2>
         <div class="form-group">
+            <label for="update_table_id">Table ID:</label>
+            <input type="number" id="update_table_id">
+        </div>
+        <div class="form-group">
+            <label for="update_order_id">Order ID:</label>
+            <input type="number" id="update_order_id">
+        </div>
+        <div class="form-group">
             <label for="status">Status:</label>
             <input type="text" id="status" placeholder="e.g., Completed">
             <button onclick="updateOrder()">Update</button>
@@ -172,10 +206,23 @@
 
         <h2>Delete Order</h2>
         <div class="form-group">
-            <label for="order_id_delete">Order ID:</label>
-            <input type="number" id="order_id_delete">
+            <label for="delete_table_id">Table ID:</label>
+            <input type="number" id="delete_table_id">
+        </div>
+        <div class="form-group">
+            <label for="delete_order_id">Order ID:</label>
+            <input type="number" id="delete_order_id">
             <button onclick="deleteOrder()">Delete</button>
         </div>
+
+        <h2>Get Bill</h2>
+        <div class="form-group">
+            <label for="billing_table_id">Table ID:</label>
+            <input type="number" id="billing_table_id">
+            <button onclick="getBill()">Get Bill</button>
+        </div>
+
+        <div id="billDetails"></div>
     </div>
 </body>
 </html>

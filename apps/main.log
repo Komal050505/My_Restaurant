@@ -1,0 +1,163 @@
+2024-07-18 23:26:59,427 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-18 23:26:59,427 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-18 23:26:59,434 - INFO -  * Restarting with stat
+2024-07-18 23:26:59,907 - WARNING -  * Debugger is active!
+2024-07-18 23:26:59,919 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:27:10,142 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-18 23:27:10,142 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-18 23:27:10,148 - INFO -  * Restarting with stat
+2024-07-18 23:27:10,665 - WARNING -  * Debugger is active!
+2024-07-18 23:27:10,673 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:30:33,646 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-18 23:30:33,647 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-18 23:30:33,656 - INFO -  * Restarting with stat
+2024-07-18 23:30:33,756 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\app.py', reloading
+2024-07-18 23:30:33,823 - INFO -  * Restarting with stat
+2024-07-18 23:30:34,204 - WARNING -  * Debugger is active!
+2024-07-18 23:30:34,213 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:30:34,353 - WARNING -  * Debugger is active!
+2024-07-18 23:30:34,361 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:31:28,315 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\app.py', reloading
+2024-07-18 23:31:28,425 - INFO -  * Restarting with stat
+2024-07-18 23:31:28,442 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\app.py', reloading
+2024-07-18 23:31:28,538 - INFO -  * Restarting with stat
+2024-07-18 23:31:29,010 - WARNING -  * Debugger is active!
+2024-07-18 23:31:29,019 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:31:29,056 - WARNING -  * Debugger is active!
+2024-07-18 23:31:29,065 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:34:27,083 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\app.py', reloading
+2024-07-18 23:34:27,139 - INFO -  * Restarting with stat
+2024-07-18 23:34:27,604 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-18 23:34:27,604 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-18 23:34:27,610 - INFO -  * Restarting with stat
+2024-07-18 23:34:27,751 - WARNING -  * Debugger is active!
+2024-07-18 23:34:27,758 - INFO -  * Debugger PIN: 862-316-944
+2024-07-18 23:34:28,048 - WARNING -  * Debugger is active!
+2024-07-18 23:34:28,054 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 00:09:46,691 - INFO - 127.0.0.1 - - [19/Jul/2024 00:09:46] "[33mDELETE /order/1 HTTP/1.1[0m" 404 -
+2024-07-19 00:11:33,475 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 00:11:33,476 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 00:11:33,485 - INFO -  * Restarting with stat
+2024-07-19 00:11:33,971 - WARNING -  * Debugger is active!
+2024-07-19 00:11:33,977 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 00:11:54,048 - INFO - Home endpoint accessed
+2024-07-19 00:11:54,048 - INFO - 127.0.0.1 - - [19/Jul/2024 00:11:54] "GET / HTTP/1.1" 200 -
+2024-07-19 00:13:16,999 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\app.py', reloading
+2024-07-19 00:13:17,106 - INFO -  * Restarting with stat
+2024-07-19 00:13:17,834 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 00:13:17,835 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 00:13:17,845 - INFO -  * Restarting with stat
+2024-07-19 00:13:18,213 - WARNING -  * Debugger is active!
+2024-07-19 00:13:18,227 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 00:13:18,506 - WARNING -  * Debugger is active!
+2024-07-19 00:13:18,515 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 00:13:22,248 - INFO - Home endpoint accessed
+2024-07-19 00:13:22,248 - INFO - 127.0.0.1 - - [19/Jul/2024 00:13:22] "GET / HTTP/1.1" 200 -
+2024-07-19 22:30:16,016 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 22:30:16,018 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 22:30:16,033 - INFO -  * Restarting with stat
+2024-07-19 22:30:16,831 - WARNING -  * Debugger is active!
+2024-07-19 22:30:16,849 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 22:56:32,299 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 22:56:32,299 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 22:56:32,307 - INFO -  * Restarting with stat
+2024-07-19 22:56:33,011 - WARNING -  * Debugger is active!
+2024-07-19 22:56:33,032 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 22:58:19,517 - INFO - Home endpoint accessed
+2024-07-19 22:58:19,519 - INFO - 127.0.0.1 - - [19/Jul/2024 22:58:19] "GET / HTTP/1.1" 200 -
+2024-07-19 22:59:48,550 - INFO - Home endpoint accessed
+2024-07-19 22:59:48,550 - INFO - 127.0.0.1 - - [19/Jul/2024 22:59:48] "GET / HTTP/1.1" 200 -
+2024-07-19 23:01:02,756 - INFO - 127.0.0.1 - - [19/Jul/2024 23:01:02] "GET /menu HTTP/1.1" 200 -
+2024-07-19 23:02:55,711 - INFO - Fetching orders for Table 1 started
+2024-07-19 23:02:55,713 - INFO - Fetching orders for Table 1 ended
+2024-07-19 23:02:55,713 - INFO - 127.0.0.1 - - [19/Jul/2024 23:02:55] "GET /table/1/order HTTP/1.1" 200 -
+2024-07-19 23:05:36,145 - INFO - Creating order for Table 1 started
+2024-07-19 23:05:36,148 - INFO - Order created for Table 1: {'chinese': 'chicken_fried_rice'}
+2024-07-19 23:05:36,149 - INFO - Creating order for Table 1 ended
+2024-07-19 23:05:36,149 - INFO - 127.0.0.1 - - [19/Jul/2024 23:05:36] "[35m[1mPOST /table/1/order HTTP/1.1[0m" 201 -
+2024-07-19 23:10:28,321 - INFO -  * Detected change in 'C:\\Users\\lenovo\\PycharmProjects\\my_restaurant_project\\apps\\constants.py', reloading
+2024-07-19 23:10:28,447 - INFO -  * Restarting with stat
+2024-07-19 23:10:30,768 - WARNING -  * Debugger is active!
+2024-07-19 23:10:30,793 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:10:42,359 - INFO - 127.0.0.1 - - [19/Jul/2024 23:10:42] "OPTIONS /table/2/order HTTP/1.1" 200 -
+2024-07-19 23:10:42,363 - INFO - Creating order for Table 2 started
+2024-07-19 23:10:42,363 - INFO - Order created for Table 2: {'items': [{'category': 'mutton', 'name': 'item', 'quantity': 1}]}
+2024-07-19 23:10:42,367 - INFO - Creating order for Table 2 ended
+2024-07-19 23:10:42,368 - INFO - 127.0.0.1 - - [19/Jul/2024 23:10:42] "[35m[1mPOST /table/2/order HTTP/1.1[0m" 201 -
+2024-07-19 23:11:03,257 - INFO - 127.0.0.1 - - [19/Jul/2024 23:11:03] "[33mGET /table/1/order/ HTTP/1.1[0m" 404 -
+2024-07-19 23:11:07,633 - WARNING - Order 1 not found for Table 1
+2024-07-19 23:11:07,633 - INFO - Fetching order 1 for Table 1 ended
+2024-07-19 23:11:07,633 - INFO - 127.0.0.1 - - [19/Jul/2024 23:11:07] "[33mGET /table/1/order/1 HTTP/1.1[0m" 404 -
+2024-07-19 23:11:13,244 - WARNING - Order 1 not found for Table 0
+2024-07-19 23:11:13,244 - INFO - Fetching order 1 for Table 0 ended
+2024-07-19 23:11:13,247 - INFO - 127.0.0.1 - - [19/Jul/2024 23:11:13] "[33mGET /table/0/order/1 HTTP/1.1[0m" 404 -
+2024-07-19 23:11:17,037 - WARNING - Order 0 not found for Table 0
+2024-07-19 23:11:17,042 - INFO - Fetching order 0 for Table 0 ended
+2024-07-19 23:11:17,042 - INFO - 127.0.0.1 - - [19/Jul/2024 23:11:17] "[33mGET /table/0/order/0 HTTP/1.1[0m" 404 -
+2024-07-19 23:17:04,602 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:17:04,603 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:17:04,615 - INFO -  * Restarting with stat
+2024-07-19 23:17:05,419 - WARNING -  * Debugger is active!
+2024-07-19 23:17:05,434 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:17:44,924 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:17:44,924 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:17:44,932 - INFO -  * Restarting with stat
+2024-07-19 23:17:45,542 - WARNING -  * Debugger is active!
+2024-07-19 23:17:45,548 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:20:19,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:20:19,401 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:20:19,410 - INFO -  * Restarting with stat
+2024-07-19 23:20:20,010 - WARNING -  * Debugger is active!
+2024-07-19 23:20:20,019 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:23:25,924 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:23:25,924 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:23:25,935 - INFO -  * Restarting with stat
+2024-07-19 23:23:26,679 - WARNING -  * Debugger is active!
+2024-07-19 23:23:26,692 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:26:09,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:26:09,349 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:26:09,362 - INFO -  * Restarting with stat
+2024-07-19 23:26:10,084 - WARNING -  * Debugger is active!
+2024-07-19 23:26:10,095 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:30:56,434 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:30:56,435 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:30:56,448 - INFO -  * Restarting with stat
+2024-07-19 23:30:57,107 - WARNING -  * Debugger is active!
+2024-07-19 23:30:57,124 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:31:22,871 - WARNING - Order 1 not found for Table 1
+2024-07-19 23:31:22,872 - INFO - Fetching order 1 for Table 1 ended
+2024-07-19 23:31:22,873 - INFO - 127.0.0.1 - - [19/Jul/2024 23:31:22] "[33mGET /table/1/order/1 HTTP/1.1[0m" 404 -
+2024-07-19 23:31:46,732 - INFO - 127.0.0.1 - - [19/Jul/2024 23:31:46] "OPTIONS /table/1/order HTTP/1.1" 200 -
+2024-07-19 23:31:46,736 - INFO - Creating order for Table 1 started
+2024-07-19 23:31:46,741 - INFO - Order created for Table 1: {'items': [{'category': 'mutton', 'name': 'item', 'quantity': 1}]}
+2024-07-19 23:31:46,741 - INFO - Creating order for Table 1 ended
+2024-07-19 23:31:46,741 - INFO - 127.0.0.1 - - [19/Jul/2024 23:31:46] "[35m[1mPOST /table/1/order HTTP/1.1[0m" 201 -
+2024-07-19 23:31:50,989 - INFO - Fetching order 1 for Table 1 started
+2024-07-19 23:31:50,990 - INFO - Fetching order 1 for Table 1 ended
+2024-07-19 23:31:50,990 - INFO - 127.0.0.1 - - [19/Jul/2024 23:31:50] "GET /table/1/order/1 HTTP/1.1" 200 -
+2024-07-19 23:34:18,299 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:34:18,299 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:34:18,308 - INFO -  * Restarting with stat
+2024-07-19 23:34:19,246 - WARNING -  * Debugger is active!
+2024-07-19 23:34:19,254 - INFO -  * Debugger PIN: 862-316-944
+2024-07-19 23:37:11,968 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-19 23:37:11,968 - INFO - [33mPress CTRL+C to quit[0m
+2024-07-19 23:37:11,978 - INFO -  * Restarting with stat
+2024-07-19 23:37:12,579 - WARNING -  * Debugger is active!
+2024-07-19 23:37:12,596 - INFO -  * Debugger PIN: 862-316-944
